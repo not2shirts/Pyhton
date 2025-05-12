@@ -1,0 +1,46 @@
+>>> f = open("sample.py", "r")
+>>> f.readline()
+'\n'
+>>> f.readline()
+'print("Hello Everyone")\n'
+>>> f.readline()
+'username = "Gaurav"\n'
+>>> f.readline()
+'print(f"this is the username {username}")\n'
+>>> f.readline()
+''
+>>> f.read()
+''
+>>> f.seek(0)
+0
+>>> f.read()
+'\nprint("Hello Everyone")\nusername = "Gaurav"\nprint(f"this is the username {username}")\n'
+>>>
+>>> f.tell()
+91
+>>> f.__next__
+<method-wrapper '__next__' of _io.TextIOWrapper object at 0x0000019b5b561970>
+>>> f.__next__()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+>>> f.seek(0)
+0
+>>> f.__next__()
+'\n'
+>>> f.__next__()
+'print("Hello Everyone")\n'
+>>>
+>>> lines = f.readlines()
+>>> for line in lines:
+...     print(line, end="\n")
+...
+
+
+print("Hello Everyone")
+
+username = "Gaurav"
+
+print(f"this is the username {username}")
+
+This is the added line

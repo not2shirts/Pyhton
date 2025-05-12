@@ -1,0 +1,23 @@
+>>> list =[1,2,3,4]
+>>> I = iter(list)
+>>> I
+<list_iterator object at 0x7f30f7f03fd0>
+>>> list.__next__()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute '__next__'. Did you mean: '__ne__'?
+>>> I.__next__()
+1
+>>> I.__next__()
+2
+>>> I
+<list_iterator object at 0x7f30f7f03fd0>
+>>>
+#   file object is itself have a refrence
+>>> file = open("sample.py", "r")
+>>> I = iter(file)
+>>> I
+<_io.TextIOWrapper name='sample.py' mode='r' encoding='UTF-8'>
+>>> I is file
+True
+>>>

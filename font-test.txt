@@ -1,0 +1,18 @@
+✅  Unicode check
+✌️  Emojis
+➤  Arrows
+⚡  Lightning
+
+🎯  Nerd Font Icons:
+  Git
+  Terminal
+  GitHub
+  Shell
+  Folder
+  Code
+  Chrome
+  Open folder
+  File manager
+  Music
+
+🧪 If all symbols above look correct and not like boxes or ? — you're good!

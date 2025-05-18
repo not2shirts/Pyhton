@@ -15,8 +15,8 @@ class Car:
     @staticmethod
     def gen_desc():
         return "A mode of transport and are pretty cool!! "
-
-
+# @staticmethod makes the method usable from both the class and instances without passing anything implicitly.
+# can also use @property decorater to make a attribute read only, make the attribute private
 
 
 class Elcetric_car(Car):
@@ -29,6 +29,9 @@ class Elcetric_car(Car):
 
 my_car = Car('BMW', "M4")
 print(my_car.getBrand())
+print(my_car.model)
+
+my_car.model = "M3"
 print(my_car.model)
 
 my_new_car = Car("Suzuki", "Swift")
@@ -46,3 +49,7 @@ print(Car.total_car) # 3
 
 print(my_car.gen_desc())
 print(Car.gen_desc())
+
+print(isinstance(my_electric_car, Car))
+print(isinstance(my_electric_car, Elcetric_car))
+print(isinstance(my_new_car, Elcetric_car))
